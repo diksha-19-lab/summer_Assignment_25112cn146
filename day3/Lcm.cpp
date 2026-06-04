@@ -1,20 +1,20 @@
-#include<iostream>
- using namespace std;
-    int main()
-    {
-        int a, b, lcm;
-        cout<<"enter two numbers:";
-        cin>>a>>b;
-        lcm=(a>b)? a : b;
-        while(true)
-        {
-            if(lcm%a==0 && lcm%b==0)
-            {
-                cout<<"LCM is: "<<lcm;
-                break;
-            }
-            lcm++;
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, max;
+
+    cin >> a >> b;
+
+    max = (a > b) ? a : b;
+
+    while (1) {
+        if (max % a == 0 && max % b == 0) {
+            cout << "LCM = " << max;
+            break;
         }
-        return 0;
+        max++;
     }
-            
+
+    return 0;
+}
